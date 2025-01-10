@@ -1,0 +1,7 @@
+services:
+  spark:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile
+    volumes:
+      - ./spark/work:/work
