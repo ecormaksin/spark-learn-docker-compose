@@ -3,5 +3,7 @@ services:
     build:
       context: ./spark
       dockerfile: Dockerfile
+    ports:
+      - 4040:4040
     volumes:
       - ./spark/work:/work
